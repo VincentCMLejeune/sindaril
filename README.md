@@ -75,3 +75,9 @@ export default defineConfig([
   },
 ])
 ```
+
+
+Deploy git pages
+
+git checkout main
+npm run deploy
