@@ -24,7 +24,12 @@ export function HealthCheck() {
     }, []);
     return (
         <div>
+            <div>
+            API url: {API_URL}
+            </div>
+            <div>
             Database status: {StatusMessage[status]}
+            </div>
         </div>
     );
 }
