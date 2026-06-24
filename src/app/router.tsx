@@ -1,8 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
+import Home from '../pages/home/Home.tsx'
 
 export const router = createBrowserRouter([
     {
-        path: '/',
-        element: <div>Home</div>,
+        path: '/', element: <Home />
     },
-]);
+],
+{ basename: '/sindaril/' });
