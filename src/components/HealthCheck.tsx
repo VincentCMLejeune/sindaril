@@ -28,7 +28,7 @@ export function HealthCheck() {
             API url: {API_URL}
             </div>
             <div>
-            Database status: {StatusMessage[status]}
+            API status: {StatusMessage[status]}
             </div>
         </div>
     );
