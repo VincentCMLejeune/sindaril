@@ -10,4 +10,4 @@ export const router = createBrowserRouter([
         path: '/sandbox', element: <Sandbox />
     }
 ],
-    { basename: '/' });
+    { basename: '/sindaril/' });

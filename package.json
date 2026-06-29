@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://vincentcmlejeune.github.io",
+  "homepage": "https://vincentcmlejeune.github.io/sindaril",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
