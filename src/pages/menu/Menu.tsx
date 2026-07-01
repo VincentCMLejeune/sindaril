@@ -7,5 +7,6 @@ export default function Menu() {
         <HealthCheck />
         <p>Né à une époque où Internet était un refuge.</p>
         <Link to="/sandbox">Sandbox</Link>
+        <Link to="/feedback">Feedback</Link>
     </>)
 }
