@@ -43,6 +43,19 @@ export function Phonekeyboard({ text, setText, setCurChar }: { text: string; set
         setCurChar(currentButton ? currentButton.chars[charIdx % currentButton.chars.length] : '')
     }, [currentButton, charIdx])
 
+
+    useEffect(() => {
+        if (!currentButton) return;
+
+        const timer = setTimeout(() => {
+            setText(text + currentButton.chars[charIdx % currentButton.chars.length]);
+            setCurrentButton(null);
+            setCharIdx(0);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, [currentButton, charIdx]);
+
     return (<div><h2>Phone Keyboard</h2>
         <div>
             <button id="btn-1" onClick={() => type(btn1)}>1</button>
